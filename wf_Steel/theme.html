@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="XOOPS" />
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_themecss}>" />
+<!-- RMV: added module header -->
+<{$xoops_module_header}>
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+</script></head>
+<body> 
+<div align="center">
+<table id="table" cellpadding="0" cellspacing="0" border="0">
+  <tr>
+    <td class="header_top_left">
+		<br />
+	</td>
+    <td class="header_top_right" colspan="2">
+		<br />
+	</td>
+  </tr>
+
+  <tr>
+    <td class="header_left">
+		<a href="<{$xoops_url}>">
+		<img src="<{$xoops_imageurl}>images/logo.gif" alt="<{$xoops_meta_description}>" />
+		</a><br />
+	</td>
+    <td class="header_right" colspan="2">
+	<div class="banner"><{$xoops_banner}></div>
+	<br /><div class="text_header"><marquee><b><{$xoops_sitename}></b> : <{$xoops_pagetitle}> - <{$xoops_meta_description}></marquee></div>
+	</td>
+  </tr>
+  <tr>
+    <td class="header_bottom_left">
+		<br />
+	</td>
+    <td  class="header_bottom_right" colspan="2">
+		<br />
+	</td>
+  </tr>
+
+
+<tr>
+<!-- Start left blocks loop -->
+<td class="leftcolumn_top">
+</td>
+	
+<!-- Start center blocks loop -->
+	<{if $xoops_showrblock == 1}>
+<td class="centercolumn" >
+	<{else}>
+<td class="centercolumn" colspan="2">
+	<{/if}>
+</td>
+<!-- Start right blocks loop -->
+<{if $xoops_showrblock == 1}>
+    <td class="rightcolumn_top">
+</td>
+<{/if}>
+</tr>
+
+<tr>
+<!-- Start left blocks loop -->
+    <td class="leftcolumn">
+		<{foreach item=block from=$xoops_lblocks}>
+        <{include file="WF_Steel/theme_blockleft.html"}><br />
+        <{/foreach}>
+	<img src="<{$xoops_imageurl}>images/blank.gif" alt="" width="176" height="0" />
+	</td>
+	
+<!-- Start center blocks loop -->
+	<{if $xoops_showrblock == 1}>
+    <td class="centercolumn">
+	<{else}>
+	<td class="centercolumn" colspan="2">
+	<{/if}>
+	<table>
+		<!-- Start center-center blocks  -->
+  		<tr>
+    		<td colspan="2" class="centerCcolumn">
+				<{foreach item=block from=$xoops_ccblocks}>
+              <{include file="WF_Steel/theme_blockcenter_c.html"}><br />
+            	<{/foreach}>
+			</td>
+  		</tr>
+		
+		<!-- Start content  -->
+		<{if $xoops_contents != ""}>
+  		<tr>
+    		<td colspan="2" class="content">
+          	<{$xoops_contents}>
+			</td>
+  		</tr>
+		<{/if}>
+		
+		<!-- Start center left and right blocks  -->
+  		<tr>
+    		<td class="centerLcolumn">
+			<{foreach item=block from=$xoops_clblocks}>
+            <{include file="WF_Steel/theme_blockcenter_l.html"}><br />
+            <{/foreach}>
+			</td>
+    		<td class="centerRcolumn">
+			<{foreach item=block from=$xoops_crblocks}>
+            <{include file="WF_Steel/theme_blockcenter_r.html"}><br />
+            <{/foreach}>
+			</td>
+ 		</tr>
+</table>
+</td>
+
+
+<!-- Start right blocks loop -->
+<{if $xoops_showrblock == 1}>
+    <td class="rightcolumn">
+		<{if !$xoops_isuser}>
+		<div class="login">
+		<form  style="margin-top: 0px; margin-bottom: 0px;" action="<{$xoops_url}>/user.php" method="post">
+		<b>Login&nbsp;:&nbsp;</b>
+		<input type="text" name="uname" size="12" value="<{$block.unamevalue}>" /><br />
+		<b>Pass&nbsp;&nbsp;:&nbsp;</b>
+		<input type="password" name="pass" size="12" /><br />
+		<input type="hidden" name="xoops_redirect" value="<{$xoops_requesturi}>" />
+		<input type="hidden" name="op" value="login" />
+		<input type="submit" value="OK" size="12" /></form></div>
+		<div align="center"><a href="<{$xoops_url}>/register.php">Register</a></div>
+		<br />
+		<{/if}>
+		<{foreach item=block from=$xoops_rblocks}>
+		<{include file="WF_Steel/theme_blockright.html"}><br />
+		<{/foreach}>
+	<img src="<{$xoops_imageurl}>images/blank.gif" alt="" width="176" height="0" />
+	</td>
+<{/if}>
+  </tr>
+
+
+<tr>
+<!-- Start left blocks loop -->
+<td class="leftcolumn_bottom">
+</td>
+	
+<!-- Start center blocks loop -->
+	<{if $xoops_showrblock == 1}>
+<td class="centercolumn">
+	<{else}>
+<td class="centercolumn" colspan="2">
+	<{/if}>
+</td>
+<!-- Start right blocks loop -->
+<{if $xoops_showrblock == 1}>
+    <td class="rightcolumn_bottom">
+</td>
+<{/if}>
+</tr>
+
+
+
+
+<!-- Start Footer -->
+  <tr>
+    <td class="header_top_left">
+		<br />
+	</td>
+    <td class="header_top_right"colspan="2">
+		<br />
+	</td>
+  </tr>
+
+  <tr>
+    <td class="header_left">
+	<img src="<{$xoops_imageurl}>images/wolf_paw_bk.gif" alt="<{$xoops_sitename}> - <{$xoops_meta_author}> - <{$xoops_meta_copyright}>" />
+	</td>
+    <td class="header_right" colspan="2">
+		<div class="footer"><{$xoops_footer}></div>
+		<br />
+		<div class="footer_logo">
+		<a onclick="window.open('popup.htm', 'wclose', 'width=310, height=260, toolbar=no, status=no, scrollbars=no, resizable=yes, left=120, top=120')" href="<{$xoops_imageurl}>doc/wolfactory.html" target=wclose>
+		<img src="<{$xoops_imageurl}>images/wolfactory_tag.gif" alt="Theme Design : Solo - WolFactory" /></a>
+		</div>
+	</td>
+  </tr>
+  <tr>
+    <td class="header_bottom_left">
+		<br />
+	</td>
+    <td class="header_bottom_right" colspan="2">
+		<br />
+	</td>
+  </tr>
+</table>
+</div>
+</body>
+
+</html>

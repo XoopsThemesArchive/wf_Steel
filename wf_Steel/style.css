@@ -1,0 +1,780 @@
+/* WF_Steel - a WolFactory theme made by Solo*/
+/* This controls the default link settings & link mouseover/hover settings */
+a {
+	color: #6666AA;
+	background: transparent;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #8888BB;
+	background: transparent;
+}
+
+/* This controls the default settings on a page */
+body {
+	margin: 0;
+	padding: 0;
+	color: #000000;
+	background: transparent url('images/background.gif') repeat top left;
+	font-family: Verdana, Arial, Helvetica, Tahoma, sans-serif;
+}
+
+
+
+/* IE navbar look*/
+html {
+	scrollbar-face-color: #444444;
+	scrollbar-highlight-color: #CCCCCC;
+	scrollbar-shadow-color: #DDDDDD;
+	scrollbar-3dlight-color: #999999;
+	scrollbar-arrow-color: #FFFFFF;
+	scrollbar-track-color: #EEEEEE;
+	scrollbar-darkshadow-color: #666666;
+}
+
+
+/* List look*/
+ul {
+	margin: 2px;
+	padding: 2px;
+	list-style: inside;
+	text-align: left;
+	azimuth: center-left;
+}
+
+li {
+	margin-left: 2px;
+}
+
+
+
+
+/* Tables settings*/
+/* The default settings for ALL tables on a site, unless explicity defined for a particular table */
+table {
+	width: 100%;
+}
+
+table#table {
+	width: 756px;
+}
+
+table td {
+	padding: 1px;
+	font-size: 12px;
+	vertical-align: top;
+}
+
+/* Controls the settings for a table header */
+th {
+	padding: 2px;
+	color: #FFFFFF;
+	background: #666666;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-align: center;
+	vertical-align: middle;
+}
+
+/* Controls the settings for table content */
+table td.content {
+	padding: 6px;
+	border-right: 1px solid #DDDDDD;
+	border-bottom: 1px solid #DDDDDD;
+	border-top: 1px solid #666666;
+	border-left: 1px solid #666666;
+	color: #000000;
+	background: #FFFFFF;
+	text-align: left;
+}
+
+
+/* Styles used to draw homogeneous tables */
+.outer {
+	border-right: 1px solid #DDDDDD;
+	border-bottom: 1px solid #DDDDDD;
+	border-top: 1px solid #666666;
+	border-left: 1px solid #666666;
+	background: #FFFFFF;
+	color: Black;
+}
+
+.head {
+	padding: 5px;
+	background: #BBBBBB;
+	font-weight: bold;
+	color: Black;
+}
+
+.even {
+	padding: 5px;
+	background: #999999;
+	color: Black;
+}
+
+.odd {
+	padding: 5px;
+	background: #AAAAAA;
+	color: Black;
+}
+
+tr.even td {
+	padding: 5px;
+	background: #999999;
+	color: Black;
+}
+
+tr.odd td {
+	padding: 5px;
+	background: #AAAAAA;
+	color: Black;
+}
+
+.foot {
+	padding: 5px;
+	background: #555555;
+	font-weight: bold;
+	color: Black;
+}
+
+
+
+/* The area at the top of the page where the logo and advertising banner are */
+table td.header_top_left {
+	background: transparent url('images/steel_footer.jpg') repeat top left;
+}
+
+table td.header_top_right {
+	background: transparent url('images/steel_footer.jpg') repeat top right;
+}
+
+table td.header_left {
+	padding-left: 10px;
+	text-align: center;
+	vertical-align: middle;
+	background: transparent url('images/steel_footer_center.jpg') repeat center left;
+}
+
+table td.header_right {
+	text-align: center;
+	vertical-align: middle;
+	background: transparent url('images/steel_footer_center.jpg') repeat center right;
+}
+
+table td.header_bottom_left {
+	width:180px;
+	background: transparent url('images/steel_footer.jpg') repeat bottom left;
+}
+
+table td.header_bottom_right {
+	background: transparent url('images/steel_footer.jpg') repeat bottom right;
+}
+
+
+div.banner {
+	width: 472px;
+	padding: 2px;
+	color: #DDDDDD;
+	text-align: center;
+	border-right: 3px solid #DDDDDD;
+	border-bottom: 3px solid #DDDDDD;
+	border-top: 3px solid #666666;
+	border-left: 3px solid #666666;
+	background: transparent url('images/background_gride.gif') repeat top left;
+}
+
+div.text_header {
+	padding: 2px;
+	width: 472px;
+	color: #DDDDDD;
+	text-align: center;
+	font-style: italic;
+	border-right: 3px solid #DDDDDD;
+	border-bottom: 3px solid #DDDDDD;
+	border-top: 3px solid #666666;
+	border-left: 3px solid #666666;
+	background: transparent url('images/background_gride.gif') repeat top left;
+}
+
+
+/* The area at the bottom of the page */
+td.footer {
+	font-style: italic;
+	font-size: 90%;
+	vertical-align: middle;
+}
+div.footer {
+	padding: 2px;
+	width: 472px;
+	color: #DDDDDD;
+	text-align: center;
+	border-right: 3px solid #DDDDDD;
+	border-bottom: 3px solid #DDDDDD;
+	border-top: 3px solid #666666;
+	border-left: 3px solid #666666;
+	background: transparent url('images/background_gride.gif') repeat top left;
+}
+
+div.footer_logo {
+	padding: 2px;
+	width: 82px;
+	text-align: center;
+	border-right: 3px solid #DDDDDD;
+	border-bottom: 3px solid #DDDDDD;
+	border-top: 3px solid #666666;
+	border-left: 3px solid #666666;
+	background: transparent url('images/background_gride.gif') repeat top left;
+}
+
+
+/* The theme included login look*/
+div.login {
+	color: #444444;
+	background: transparent;
+	padding-right: 6px;
+	text-align: right;
+}
+
+
+
+
+/* settings for the Main Menu Block*/
+/* Main Menu Links*/
+td#mainmenu a {
+	display: block;
+	padding: 12px;
+	background: transparent url('images/steel_block_button.jpg') no-repeat top left;
+	text-align: left;
+	align: middle;
+}
+
+/* Main Menu Hover*/
+td#mainmenu a:hover {
+	color: #8888BB;
+	background: #AAAAAA;
+}
+
+/* Main Menu Top Links*/
+td#mainmenu a.menuTop {
+}
+
+/* Main Menu Main Links*/
+td#mainmenu a.menuMain {
+	padding-left: 4px;
+}
+
+/* Main Menu Sub Links*/
+td#mainmenu a.menuSub {
+	padding-left: 15px;
+	font-style: italic;
+}
+
+td#mainmenu a:hover.menuSub {
+	padding-left: 10px;
+	color: #8888BB;
+	background: #AAAAAA;
+}
+
+
+
+
+
+/* settings for the user Menu */
+td#usermenu a {
+	display: block;
+	padding: 12px;
+	background: transparent url('images/steel_block_button.jpg') no-repeat top left;
+	text-align: left;
+}
+
+td#usermenu a:hover {
+	color: #8888BB;
+	background: #AAAAAA;
+}
+
+td#usermenu a.highlight {
+	color: #FFFFFF;
+	background: #555555;
+}
+
+td#usermenu a.menuTop {
+}
+
+
+td#usermenu a:hover.highlight {
+	color: #8888BB;
+	background: transparent;
+}
+
+
+
+
+
+
+
+/* DEALING WITH THE THREE COLUMNS*/
+/* controls the settings for blocks on the LEFT side of the page */
+
+td.leftcolumn_top {
+	width: 180px;
+	height: 4px;
+	background: transparent url('images/column_top.jpg') no-repeat top left;
+}
+
+td.leftcolumn {
+	width: 186px;
+	padding-left: 3px;
+	font-size: 12px;
+	text-align: left;
+	background: transparent url('images/column_center.jpg') repeat-y top left;
+}
+
+td.leftcolumn_bottom {
+	width: 180px;
+	height: 4px;
+	background: transparent url('images/column_bottom.jpg') no-repeat bottom left;
+}
+
+td.leftcolumn div.blockTitle {
+	width: 172px;
+	height: 20px;
+	padding: 6px 0px 6px 0px;
+	color: #444444;
+	background: transparent;
+	font-weight: bold;
+	text-align: center;
+	background: #FFFFFF url('images/steel_block_title.jpg') no-repeat top left;
+}
+
+td.leftcolumn div.blockContent {
+	width: 168px;
+	padding: 0px;
+	border-right: 2px solid #DDDDDD;
+	border-bottom: 2px solid #DDDDDD;
+	border-left: 2px solid #666666;
+	background: #FFFFFF;
+	line-height: 120%;
+	color: Black;
+	text-align: center;
+}
+
+td.leftcolumn th {
+	color: #FFFFFF;
+	background: #666666;
+	vertical-align: middle;
+}
+
+
+
+
+
+
+/* controls the settings for blocks on the RIGHT side of the page */
+td.rightcolumn_top {
+	width: 180px;
+	height: 4px;
+	background: transparent url('images/column_top.jpg') no-repeat top left;
+}
+
+td.rightcolumn {
+	width: 162px;
+	padding-left: 3px;
+	font-size: 12px;
+	text-align: left;
+	background: transparent url('images/column_center.jpg') repeat-y top left;
+}
+
+td.rightcolumn_bottom {
+	width: 180px;
+	height: 4px;
+	background: transparent url('images/column_bottom.jpg') no-repeat bottom left;
+}
+
+td.rightcolumn div.blockTitle {
+	width: 172px;
+	height: 20px;
+	padding: 6px 0px 6px 0px;
+	color: #444444;
+	background: transparent;
+	font-weight: bold;
+	text-align: center;
+	background: #FFFFFF url('images/steel_block_title.jpg') no-repeat top left;
+}
+
+td.rightcolumn div.blockContent {
+	width: 168px;
+	padding: 0px;
+	border-right: 2px solid #DDDDDD;
+	border-bottom: 2px solid #DDDDDD;
+	border-left: 2px solid #666666;
+	background: #FFFFFF;
+	line-height: 120%;
+	color: Black;
+	text-align: center;
+}
+
+td.rightcolumn th {
+	color: #FFFFFF;
+	background: #666666;
+	vertical-align: middle;
+}
+
+
+
+
+
+/* controls the settings for blocks on the CENTER side of the page */
+td.centercolumn {
+	width: 100%;
+	background: transparent url('images/background_gride.gif') repeat top left;
+}
+
+td.centercolumn div.blockContent {
+	padding: 6px;
+	margin-bottom: 0px;
+	background: #FFFFFF;
+	text-align: left;
+	line-height: 120%;
+	color: Black;
+}
+
+td.centercolumn th {
+	padding: 6px;
+	color: #FFFFFF;
+	background: #555555;
+	font-weight: bold;
+	text-align: center;
+}
+
+
+/* Center center blocks */
+td.centerCcolumn {
+	padding: 1px 3px 1px 3px;
+}
+
+td.centerCcolumn div.blockContent {
+	padding-left: 20px;
+	margin-right: 0px;
+	margin-left: 0px;
+	margin-bottom: 2px;
+	background: #FFFFFF;
+	line-height: 120%;
+	color: Black;
+}
+
+td.centerCcolumn legend.blockTitle {
+	color: #444444;
+	width: 172px;
+	font-weight: bold;
+	padding: 9px 0px 9px 3px;
+	background: transparent url('images/steel_block_title.jpg') no-repeat top left;
+	text-align: left;
+}
+
+
+
+/* Center left blocks */
+td.centerLcolumn {
+	width: 50%;
+	padding: 0px 3px 0px 0px;
+	text-align: center;
+}
+
+td.centerLcolumn div.blockContent {
+	padding-left: 20px;
+	margin-right: 0px;
+	margin-left: 0px;
+	margin-bottom: 2px;
+	background: #FFFFFF;
+	line-height: 120%;
+	color: Black;
+}
+
+td.centerLcolumn legend.blockTitle {
+	color: #444444;
+	width: 172px;
+	font-weight: bold;
+	padding: 9px 0px 9px 3px;
+	background: transparent url('images/steel_block_title.jpg') no-repeat top left;
+	text-align: left;
+}
+
+
+
+/* Center Right blocks */
+td.centerRcolumn {
+	width: 50%;
+	padding: 0px 3px 0px 0px;
+	text-align: left;
+}
+
+td.centerRcolumn div.blockContent {
+	padding-left: 20px;
+	margin-right: 0px;
+	margin-left: 0px;
+	margin-bottom: 2px;
+	background: #FFFFFF;
+	line-height: 120%;
+	color: Black;
+}
+
+td.centerRcolumn legend.blockTitle {
+	color: #444444;
+	width: 172px;
+	font-weight: bold;
+	padding: 9px 0px 9px 3px;
+	background: transparent url('images/steel_block_title.jpg') no-repeat top left;
+	text-align: left;
+}
+
+
+
+
+/* Styles for the commenting system */
+.comDate {
+	font-weight: normal;
+	font-style: italic;
+	font-size: smaller;
+}
+
+.comDateCaption {
+	font-weight: bold;
+	font-style: normal;
+}
+
+.comText {
+	padding: 2px;
+}
+
+.comTitle {
+	margin-bottom: 2px;
+	font-weight: bold;
+}
+
+.comUserImg {
+	margin: 2px;
+}
+
+.comUserName {
+	background-color: transparent;
+	color: Black;
+}
+
+.comUserRank {
+	margin: 2px;
+	background: transparent;
+	color: Black;
+}
+
+.comUserRankImg {
+	border: 0px none;
+}
+
+.comUserRankText {
+	font-size: 10px;
+	font-weight: bold;
+}
+
+.comUserStat {
+	border: 1px solid #C0C0C0;
+	margin: 2px;
+	padding: 2px;
+	color: #003300;
+	background: #FFFFFF;
+	font-size: 10px;
+	font-weight: bold;
+}
+
+.comUserStatCaption {
+	font-weight: normal;
+}
+
+.comUserStatus {
+	margin-left: 2px;
+	margin-top: 10px;
+	color: #FF0000;
+	font-weight: bold;
+	font-size: 10px;
+	background: transparent;
+}
+
+
+
+
+/* The following appear to primarily apply to the NEWS stories, */
+/* though they may be found in other areas as well */
+/* 
+BEGIN NEWS SECTION DEALING PRIMARILY WITH NEWS 
+*/
+
+/* The border around news stories */
+.item {
+	border: 0px solid #FFFFFF;
+}
+
+* The [edit | delete] section of a news footer */
+.itemAdminLink {
+	font-size: 90%;
+}
+
+/* The foooter of a new story (read more, etc.) */
+.itemFoot {
+	padding: 3px;
+	border-right: 1px solid #DDDDDD;
+	border-bottom: 1px solid #DDDDDD;
+	border-top: 1px solid #666666;
+	border-left: 1px solid #666666;
+	background: #EEEEEE;
+	text-align: right;
+	color: Black;
+}
+
+/* The BG color for the cell for news story titles */
+.itemHead {
+	padding: 6px;
+	border-right: 1px solid #DDDDDD;
+	border-bottom: 1px solid #DDDDDD;
+	border-top: 1px solid #666666;
+	border-left: 1px solid #666666;
+	color: #FFFFFF;
+	background: #333333;
+	font-weight: bold;
+	text-align: left;
+}
+
+/* The BG color for the area right under a news title (post by so-and-so) */
+.itemInfo {
+	padding: 3px;
+	color: #000000;
+	text-align: right;
+}
+
+/* The | xx# bytes more | section of the news footer */
+.itemPermaLink {
+	font-size: 90%;
+}
+
+/* The text On $date $time immediately after the posters name */
+.itemPostDate {
+	font-size: 90%;
+	font-style: italic;
+}
+
+/* The text just preceding the posters name */
+.itemPoster {
+	font-size: 90%;
+	font-style: italic;
+}
+
+/* The xx # reads for a story, but NOT the parenthesis surrounding the total */
+.itemStats {
+	font-size: 90%;
+	font-style: italic;
+}
+
+/* The text of the story itself */
+.itemText {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	color: Black;
+	text-align: left;
+	line-height: 1.5em;
+	background: transparent;
+}
+
+.itemBody {
+	padding-left: 5px;
+	border-right: 0px solid #DDDDDD;
+	border-bottom: 0px solid #DDDDDD;
+	border-left: 0px solid #666666;
+}
+
+* Makes the first letter in a story bold */
+.itemText:first-letter {
+	color: #000000;
+	font-size: 133%;
+	font-weight: bold;
+	background: transparent;
+}
+
+/* The text in the story title EXCEPT the colon between the topic and the title */
+.itemTitle a {
+	color: White;
+	background: transparent;
+	font-size: 110%;
+	font-variant: small-caps;
+}
+
+
+
+
+/* Special system messages*/
+/* Confirmation Message*/
+div.confirmMsg {
+	border-top: 1px solid #DDDDDD;
+	border-left: 1px solid #DDDDDD;
+	border-right: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	padding: 10px;
+	color: #000000;
+	background: #FFFFFF;
+	font-weight: bold;
+	text-align: center;
+}
+
+/* Error messages*/
+div.errorMsg {
+	border-top: 1px solid #DDDDDD;
+	border-left: 1px solid #DDDDDD;
+	border-right: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	padding: 10px;
+	color: #FFFFFF;
+	background: #CC0000;
+	font-weight: bold;
+	text-align: center;
+}
+
+*Result message*/
+div.resultMsg {
+	border-top: 1px solid #C0C0C0;
+	border-left: 1px solid #C0C0C0;
+	border-right: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	padding: 10px;
+	color: #333333;
+	background: #FFFFFF;
+	font-weight: bold;
+	text-align: center;
+}
+
+/* Settings for when you insert code in a forum post */
+div.xoopsCode {
+	border: 1px inset #003300;
+	padding: 0px 6px 6px 6px;
+	background: #FFFFFF;
+	color: #666666;
+	font-family: "Courier New",Courier,monospace;
+}
+
+* Settings for when you quote in a forum post */
+div.xoopsQuote {
+	border: 1px inset #333333;
+	padding: 0px 6px 6px 6px;
+	background: #FFFFFF;
+	color: #666666;
+	font-family: "Courier New",Courier,monospace;
+}
+
+div.xoopsQuote a {
+	color: #444444;
+	font-weight: bold;
+	background: transparent;
+}
+
+div.xoopsQuote a:hover {
+	color: #888888;
+	font-weight: bold;
+	background: transparent;
+}
